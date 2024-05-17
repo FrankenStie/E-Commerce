@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+* {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    text-decoration: none;
+    background-color: rgb(238, 231, 231);
+}
+
+
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: black;
+    padding: 20px 10%;
+
+}
+
+f {
+    position: relative;
+    top: -5px;
+    color: white;
+
+}
+
+
+.logo img {
+    max-width: 120px;
+    height: auto;
+}
+
+.navmenu {
+    display: flex;
+    text-decoration: none;
+}
+
+.navmenu a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    text-transform: capitalize;
+    padding: 10px 20px;
+    font-weight: 400;
+    transition: all .42 ease;
+}
+
+.navmenu li {
+    text-decoration: none;
+}
+
+.navmenu a:hover {
+    color: #ff69b4;
+}
+
+.search-box {
+    position: absolute;
+    top: 15px;
+    right: 170px;
+    display: none;
+    padding: 10px;
+}
+
+#close-search {
+    border-radius: 1px;
+    box-shadow: none;
+}
+
+.search-box.active {
+    display: block;
+
+}
+
+#search-icon {
+    display: inline-block;
+}
+
+
+.nav-icon {
+
+    display: flex;
+    align-items: center;
+}
+
+.nav-icon i {
+    text-decoration: none;
+    margin-right: 20px;
+    color: white;
+    font-size: 25px;
+    font-weight: 400;
+    transition: all .42 ease;
+
+}
+
+.nav-icon i:hover {
+    transform: scale(1.1);
+    color: #ff69b4;
+}
+
+#menu-icon {
+    color: white;
+    font-size: 35px;
+    z-index: 10001;
+    cursor: pointer;
+}
+
+#menu-icon:hover {
+    transform: scale(1.1);
+    color: #ff69b4;
+
+}
+
+
+
+.main {
+    display: flex;
+    justify-content: space-evenly;
+    width: 1420px;
+    height: 600px;
+}
+
+.items-container {
+
+    padding: 30px;
+    margin: 25px 0px 25px 25px;
+    height: 3100px;
+    border-radius: 10px;
+   
+}
+
+.main.container1.items-container .tems img {
+    height: auto;
+    width: 110px;
+}
+
+
+.items-container>h3,
+.cart-container h4 {
+    font-weight: bold;
+
+}
+
+.items {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.card {
+    height: 550px;
+    margin: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #969696;
+    color: rgb(255, 255, 255);
+    border: none;
+     
+}
+
+.card img{
+    
+    width: auto;
+    height: 290px;
+}
+
+.cart-container {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    height: 3100px;
+    margin: 25px 25px 25px 0px;
+    border-radius: 10px;
+    background-image: linear-gradient(to top, #d5d4d0 0%, #d5d4d0 1%, #eeeeec 31%, #efeeec 75%, #e9e9e7 100%);
+    padding: 20px;
+}
+
+.cart {
+    height: 94.1%;
+}
+
+.check-out p {
+    font-weight: bold;
+    border-bottom: 1px solid rgb(200, 200, 200);
+    padding: 0px 10px 10px 10px;
+}
+
+.check-out span {
+    font-weight: 100;
+}
+
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.add-to-cart {
+    border: none;
+    width: 150px;
+    background-color: #d32f2f;
+    align-self: center;
+    margin-top: auto;
+    /* Push the button to the bottom */
+}
+
+
+.buttons {
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+.list-group-item {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    background-image: linear-gradient(to right, #868f96 0%, #9fa6a9 100%);
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 5px;
+    margin: 3px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.list-group-item div {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.list-group-item div button {
+    width: 30px;
+    height: 30px;
+    border: none;
+    background-color: rgb(100, 100, 100);
+    color: rgb(255, 255, 255);
+}

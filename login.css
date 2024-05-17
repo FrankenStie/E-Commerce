@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    list-style: none;
+    text-decoration: none;
+}
+
+f {
+    position: relative;
+    top: -18px;
+    color: black;
+}
+
+body {
+    background-image: url('Untitled design.png');
+    object-fit: cover;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+.search-box {
+    position: absolute;
+    top: 15px;
+    right: 170px;
+    display: none;
+    padding: 10px;
+}
+
+#close-search {
+    border-radius: 1px;
+    box-shadow: none;
+}
+
+.search-box.active {
+    display: block;
+
+}
+
+#search-icon {
+    display: inline-block;
+}
+
+
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: black;
+    padding: 20px 10%;
+
+}
+
+.logo img {
+    max-width: 120px;
+    height: auto;
+}
+
+.navmenu {
+    display: flex;
+}
+
+.navmenu a {
+    color: white;
+    font-size: 16px;
+    text-transform: capitalize;
+    padding: 10px 20px;
+    font-weight: 400;
+    transition: all .42 ease;
+}
+
+.navmenu a:hover {
+    color: #ff69b4;
+}
+
+.nav-icon {
+    display: flex;
+    align-items: center;
+
+}
+
+.nav-icon i {
+
+    margin-right: 20px;
+    color: white;
+    font-size: 25px;
+    font-weight: 400;
+    transition: all .42 ease;
+}
+
+.nav-icon i:hover {
+    transform: scale(1.1);
+    color: #ff69b4;
+}
+
+#menu-icon {
+    font-size: 35px;
+    color: white;
+    z-index: 10001;
+    cursor: pointer;
+}
+
+.box {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 90vh;
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    margin-top: 70px;
+    height: 520px;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 0 15px 0 15px;
+}
+
+span {
+    background-color: #2c2c2c;
+    border-radius: 10px;
+    color: white;
+    margin-bottom: 10px;
+    font-size: small;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0 10px 0;
+}
+
+.input-field {
+
+    background-color: white;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    transition: all .42 ease;
+}
+
+e .input-field:hover {
+    transform: scale(1.01);
+    color: #ff69b4;
+}
+
+.box .container .top-header a {
+    color: #ff69b4;
+}
+
+.return-home {
+    position: relative;
+    top: -160px;
+    left: 330px;
+    font-size: 1.5rem;
+    transition: all .42 ease;
+    cursor: pointer;
+}
+
+.return-home a {
+    color: white;
+}
+
+.return-home a:hover {
+    transform: scale(1.01);
+    color: #ff69b4;
+
+}
+
+.input {
+
+    color: white;
+    height: 45px;
+    width: 350px;
+    border: none;
+    outline: none;
+    border: 2px solid rgba(0, 0, 0, 0.7);
+    /* Thicker border */
+    border-radius: 20px;
+    border: 1px solid black;
+    padding: 0 0 0 45px;
+    background: rgba(255, 255, 255, 0.7);
+}
+
+h1 {
+
+    border-radius: 10px;
+    color: whitesmoke;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    font-weight: 500;
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.bx-lock-alt,
+.bx-user {
+    position: relative;
+    top: -33px;
+    left: 17px;
+}
+
+::-webkit-input-placeholder {
+    color: black;
+}
+
+.submit {
+    background-color: black;
+    color: white;
+    border: 1px solid black;
+    border-radius: 20px;
+    font-size: 15px;
+    height: 45px;
+    outline: none;
+    width: 100%;
+    cursor: pointer;
+    transition: all .42 ease;
+}
+
+.submit:hover {
+    color: white;
+}

@@ -1,0 +1,770 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="shop.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <title>Franklins Vault&trade;</title>
+</head>
+
+<body>
+    <!--NAVIGATION BAR & HEADER-->
+    <header>
+        <a href="index.html" class="logo"><img src="Footer-removebg-preview.png" alt="Franklin">
+            <f>&trade;</f>
+        </a>
+
+        <ul class="navmenu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="Sign.html">Sign in</a></li>
+            <li><a href="shop.html">Products</a></li>
+            <li><a href="addtc.html">Shop</a></li>
+            <li><a href="shoes.html">Shoes</a></li>
+            <li><a href="store.html">Stores</a></li>
+        </ul>
+
+        <div class="nav-icon">
+            <a href="#" id="search-icon" onclick="toggleSearch()"><i class='bx bx-search'></i></a>
+            <a href="login.html"><i class='bx bx-user'></i></a>
+            <a href="addtc.html"><i class='bx bx-cart'></i></a>
+            <div class="bx bx-menu" id="menu-icon"></div>
+        </div>
+        <div id="search-box" class="search-box">
+            <input type="text" placeholder="Search...">
+            <button id="close-search" onclick="toggleSearch()">Close</button>
+        </div>
+    </header>
+    <!--NAVIGATION BAR & HEADER END-->
+
+    <section class="trending-products" id="trending">
+        <div class="center-text">
+            <h2>OUR TRENDING<span> PRODUCTS</span></h2>
+            <a href="addtc.html">UP TO 50% OFF PURCHASE 5,000 ABOVE SHOP NOW</a>
+        </div>
+        <div class="products">
+            <div id="card1"><img src="p1-removebg-preview.png" height="100" width="100">
+                <div class="product-text">
+                    <h5>HOT</h5>
+                </div>
+
+                <div class="ratting">
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bx-star'></i>
+                    <i class='bx bx-star'></i>
+                </div>
+                <div class="price">
+                    <h4>Original Bankster</h4>
+                    <p>₱ 550-1000</p>
+                </div>
+                <a href="addtc.html"><button class="add-to-cart-btn">Add to
+                        Cart</button></a>
+                <a href="addtc.html"><button class="buy-now-btn">Buy Now</button></a>
+            </div>
+
+            <div id="card2"><img src="p2-removebg-preview.png" height="100" width="100">
+                <div class="product-text">
+                    <h5>SALE</h5>
+                </div>
+
+                <div class="ratting">
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bx-star'></i>
+                </div>
+                <div class="price">
+                    <h4>Black TEE Models & and Blood</h4>
+                    <p>₱ 1500-550</p>
+                </div>
+                <a href="addtc.html"><button class="add-to-cart-btn">Add to
+                        Cart</button></a>
+                <a href="addtc.html"><button class="buy-now-btn">Buy Now</button></a>
+            </div>
+
+            <div id="card3"><img src="p3-removebg-preview.png" height="100" width="100">
+                <div class="product-text">
+                    <h5>SALE</h5>
+                </div>
+
+                <div class="ratting">
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star-half'></i>
+                </div>
+                <div class="price">
+                    <h4>Highminds</h4>
+                    <p>₱ 1500 - 550</p>
+                </div>
+                <a href="addtc.html"><button class="add-to-cart-btn">Add to
+                        Cart</button></a>
+                <a href="addtc.html"><button class="buy-now-btn">Buy Now</button></a>
+            </div>
+
+            <div id="card4"><img src="p4-removebg-preview.png" height="100" width="100">
+                <div class="product-text">
+                    <h5>SALE</h5>
+                </div>
+
+                <div class="ratting">
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                </div>
+                <div class="price">
+                    <h4>Great Minds Think Alone</h4>
+                    <p>₱ 900 - 750</p>
+                </div>
+                <a href="addtc.html"><button class="add-to-cart-btn">Add to
+                        Cart</button></a>
+                <a href="addtc.html"><button class="buy-now-btn">Buy Now</button></a>
+            </div>
+            <div id="card5"><img src="p5-removebg-preview.png" height="100" width="100">
+                <div class="product-text">
+                    <h5>HOT</h5>
+                </div>
+
+                <div class="ratting">
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star-half'></i>
+                </div>
+                <div class="price">
+                    <h4>Uniqlo</h4>
+                    <p>₱ 1250</p>
+                </div>
+                <a href="addtc.html"><button class="add-to-cart-btn">Add to
+                        Cart</button></a>
+                <a href="addtc.html"><button class="buy-now-btn">Buy Now</button></a>
+            </div>
+        </div>
+
+        <div class="products">
+            <div id="card1"><img src="11-removebg-preview (1).png" height="100" width="100">
+                <div class="product-text">
+                    <h5>NEW</h5>
+                </div>
+
+                <div class="ratting">
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bx-star'></i>
+                </div>
+                <div class="price">
+                    <h4>Stussy 8 Ball Tee - 983877-120-SNS</h4>
+                    <p>₱ 850</p>
+                </div>
+                <a href="addtc.html"><button class="add-to-cart-btn">Add to
+                        Cart</button></a>
+                <a href="addtc.html"><button class="buy-now-btn">Buy Now</button></a>
+            </div>
+            <div id="card2"><img src="8-removebg-preview.png" height="100" width="100">
+                <div class="product-text">
+                    <h5>NEW</h5>
+                </div>
+
+                <div class="ratting">
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star-half'></i>
+                </div>
+                <div class="price">
+                    <h4>Stussy Basic Stussy Tee White (US)</h4>
+                    <p>₱ 550-1000</p>
+                </div>
+                <a href="addtc.html"><button class="add-to-cart-btn">Add to
+                        Cart</button></a>
+                <a href="addtc.html"><button class="buy-now-btn">Buy Now</button></a>
+            </div>
+            <div id="card3"><img src="13-removebg-preview.png" height="100" width="100">
+                <div class="product-text">
+                    <h5>NEW</h5>
+                </div>
+
+                <div class="ratting">
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                </div>
+                <div class="price">
+                    <h4>Stussy x Nike Long Sleeve Knit Sweather</h4>
+                    <p>₱ 400</p>
+                </div>
+                <a href="addtc.html"><button class="add-to-cart-btn">Add to
+                        Cart</button></a>
+                <a href="addtc.html"><button class="buy-now-btn">Buy Now</button></a>
+            </div>
+            <div id="card4"><img src="p9-removebg-preview.png" height="100" width="100">
+                <div class="product-text">
+                    <h5>SALE</h5>
+                </div>
+                <div class="ratting">
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star-half'></i>
+                </div>
+                <div class="price">
+                    <h4>Stussy Hoodie Gray | Stussy Back Print Logo</h4>
+                    <p>₱ 2500 - 2000</p>
+                </div>
+                <a href="addtc.html"><button class="add-to-cart-btn">Add to
+                        Cart</button></a>
+                <a href="addtc.html"><button class="buy-now-btn">Buy Now</button></a>
+            </div>
+            <div id="card5"><img src="14-removebg-preview.png" height="100" width="100">
+                <div class="product-text">
+                    <h5>SALE</h5>
+                </div>
+                <div class="ratting">
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star-half'></i>
+                </div>
+                <div class="price">
+                    <h4>Stussy Stock Sweather Pink Back Printed Logo</h4>
+                    <p>₱ 900 - 550</p>
+                </div>
+                <a href="addtc.html"><button class="add-to-cart-btn">Add to
+                        Cart</button></a>
+                <a href="addtc.html"><button class="buy-now-btn">Buy Now</button></a>
+            </div>
+        </div>
+
+        <div class="center-text1">
+            <h2>Levi's®</h2>
+        </div>
+        <div class="products">
+            <div id="card1"><img src="5-removebg-preview.png" height="100" width="100">
+                <div class="product-text">
+                    <h5>NEW</h5>
+                </div>
+
+                <div class="ratting">
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bx-star'></i>
+                </div>
+                <div class="price">
+                    <h4>LEVI´S Men 501 Levis Original Misty Lake - Regular</h4>
+                    <p>₱ 5000</p>
+                </div>
+                <a href="addtc.html"><button class="add-to-cart-btn">Add to
+                        Cart</button></a>
+                <a href="addtc.html"><button class="buy-now-btn">Buy Now</button></a>
+            </div>
+            <div id="card2"><img src="3-removebg-preview.png" height="100" width="100">
+                <div class="product-text">
+                    <h5>NEW</h5>
+                </div>
+
+                <div class="ratting">
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star-half'></i>
+                </div>
+                <div class="price">
+                    <h4>Levi's® Men's Graphic Set-In Neck </h4>
+                    <p>₱ 1200</p>
+                </div>
+                <a href="addtc.html"><button class="add-to-cart-btn">Add to
+                        Cart</button></a>
+                <a href="addtc.html"><button class="buy-now-btn">Buy Now</button></a>
+            </div>
+            <div id="card3"><img src="1-removebg-preview.png" height="100" width="100">
+                <div class="product-text">
+                    <h5>NEW</h5>
+                </div>
+
+                <div class="ratting">
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                </div>
+                <div class="price">
+                    <h4>Levi's® Women's Perfect T-Shirt - Large Batwing</h4>
+                    <p>₱ 900</p>
+                </div>
+                <a href="addtc.html"><button class="add-to-cart-btn">Add to
+                        Cart</button></a>
+                <a href="addtc.html"><button class="buy-now-btn">Buy Now</button></a>
+            </div>
+            <div id="card4"><img src="4-removebg-preview.png" height="100" width="100">
+                <div class="product-text">
+                    <h5>SALE</h5>
+                </div>
+                <div class="ratting">
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star-half'></i>
+                </div>
+                <div class="price">
+                    <h4>Original Housemark T-Shirt | Levi</h4>
+                    <p>₱ 900</p>
+                </div>
+                <a href="addtc.html"><button class="add-to-cart-btn">Add to
+                        Cart</button></a>
+                <a href="addtc.html"><button class="buy-now-btn">Buy Now</button></a>
+            </div>
+            <div id="card5"><img src="10-removebg-preview.png" height="100" width="100">
+                <div class="product-text">
+                    <h5>SALE</h5>
+                </div>
+                <div class="ratting">
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star-half'></i>
+                </div>
+                <div class="price">
+                    <h4>Levi'S® Men'S Relaxed Short-Sleeve Graphic T-Shirt </h4>
+                    <p>₱ 1400</p>
+                </div>
+                <a href="addtc.html"><button class="add-to-cart-btn">Add to
+                        Cart</button></a>
+                <a href="addtc.html"><button class="buy-now-btn">Buy Now</button></a>
+            </div>
+        </div>
+
+
+        <div class="products">
+            <div id="card1"><img src="6-removebg-preview.png" height="100" width="100">
+                <div class="product-text">
+                    <h5>NEW</h5>
+                </div>
+
+                <div class="ratting">
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bx-star'></i>
+                </div>
+                <div class="price">
+                    <h4>Levi's® Women's The Perfect Destination T-Shirt</h4>
+                    <p>₱ 950</p>
+                </div>
+                <a href="addtc.html"><button class="add-to-cart-btn">Add to
+                        Cart</button></a>
+                <a href="addtc.html"><button class="buy-now-btn">Buy Now</button></a>
+            </div>
+            <div id="card2"><img src="15-removebg-preview.png" height="100" width="100">
+                <div class="product-text">
+                    <h5>NEW</h5>
+                </div>
+
+                <div class="ratting">
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star-half'></i>
+                </div>
+                <div class="price">
+                    <h4>Levi's t-shirt in white with central small box tab logo </h4>
+                    <p>₱ 550</p>
+                </div>
+                <a href="addtc.html"><button class="add-to-cart-btn">Add to
+                        Cart</button></a>
+                <a href="addtc.html"><button class="buy-now-btn">Buy Now</button></a>
+            </div>
+            <div id="card3"><img src="9-removebg-preview.png" height="100" width="100">
+                <div class="product-text">
+                    <h5>NEW</h5>
+                </div>
+
+                <div class="ratting">
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                </div>
+                <div class="price">
+                    <h4>Levi's® Women's Perfect T-Shirt 39185-0008 </h4>
+                    <p>₱ 800</p>
+                </div>
+                <a href="addtc.html"><button class="add-to-cart-btn">Add to
+                        Cart</button></a>
+                <a href="addtc.html"><button class="buy-now-btn">Buy Now</button></a>
+            </div>
+            <div id="card4"><img src="12-removebg-preview.png" height="100" width="100">
+                <div class="product-text">
+                    <h5>SALE</h5>
+                </div>
+                <div class="ratting">
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star-half'></i>
+                </div>
+                <div class="price">
+                    <h4>Buy Levis Men's Pocket T-Shirt Online Philippines</h4>
+                    <p>₱ 800</p>
+                </div>
+                <a href="addtc.html"><button class="add-to-cart-btn">Add to
+                        Cart</button></a>
+                <a href="addtc.html"><button class="buy-now-btn">Buy Now</button></a>
+            </div>
+            <div id="card5"><img src="2-removebg-preview.png" height="100" width="100">
+                <div class="product-text">
+                    <h5>SALE</h5>
+                </div>
+                <div class="ratting">
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star-half'></i>
+                </div>
+                <div class="price">
+                    <h4>Levi's® THE PERFECT TEE - Print T-shirt - woodgrain</h4>
+                    <p>₱ 900</p>
+                </div>
+                <a href="addtc.html"><button class="add-to-cart-btn">Add to
+                        Cart</button></a>
+                <a href="addtc.html"><button class="buy-now-btn">Buy Now</button></a>
+            </div>
+        </div>
+
+
+        <div class="products">
+            <div id="card1"><img src="20-removebg-preview.png" height="100" width="100">
+                <div class="product-text">
+                    <h5>NEW</h5>
+                </div>
+
+                <div class="ratting">
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bx-star'></i>
+                </div>
+                <div class="price">
+                    <h4>Star Wars Ahsokaglam Ss T-shirts</h4>
+                    <p>₱ 850</p>
+                </div>
+                <a href="addtc.html"><button class="add-to-cart-btn">Add to
+                        Cart</button></a>
+                <a href="addtc.html"><button class="buy-now-btn">Buy Now</button></a>
+            </div>
+            <div id="card2"><img src="p7-removebg-preview.png" height="100" width="100">
+                <div class="product-text">
+                    <h5>NEW</h5>
+                </div>
+
+                <div class="ratting">
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star-half'></i>
+                </div>
+                <div class="price">
+                    <h4>DC Shoe Cousa T-Shirt White Enyme Wash - Men's</h4>
+                    <p>₱ 550-1000</p>
+                </div>
+                <a href="addtc.html"><button class="add-to-cart-btn">Add to
+                        Cart</button></a>
+                <a href="addtc.html"><button class="buy-now-btn">Buy Now</button></a>
+            </div>
+            <div id="card3"><img src="18-removebg-preview.png" height="100" width="100">
+                <div class="product-text">
+                    <h5>NEW</h5>
+                </div>
+
+                <div class="ratting">
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                </div>
+                <div class="price">
+                    <h4>T-Shirt DC Shatter Hss - Black Enzyme Wash - men´s </h4>
+                    <p>₱ 400</p>
+                </div>
+                <a href="addtc.html"><button class="add-to-cart-btn">Add to
+                        Cart</button></a>
+                <a href="addtc.html"><button class="buy-now-btn">Buy Now</button></a>
+            </div>
+            <div id="card4"><img src="19-removebg-preview.png" height="100" width="100">
+                <div class="product-text">
+                    <h5>SALE</h5>
+                </div>
+                <div class="ratting">
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star-half'></i>
+                </div>
+                <div class="price">
+                    <h4>T-shirts DC Density Zone Tee White Queens</h4>
+                    <p>₱ 2500 - 2000</p>
+                </div>
+                <a href="addtc.html"><button class="add-to-cart-btn">Add to
+                        Cart</button></a>
+                <a href="addtc.html"><button class="buy-now-btn">Buy Now</button></a>
+            </div>
+            <div id="card5"><img src="17-removebg-preview.png" height="100" width="100">
+                <div class="product-text">
+                    <h5>SALE</h5>
+                </div>
+                <div class="ratting">
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star-half'></i>
+                </div>
+                <div class="price">
+                    <h4>DC Angles Black T-Shirt, 50% OFF</h4>
+                    <p>₱ 900 - 550</p>
+                </div>
+                <a href="addtc.html"><button class="add-to-cart-btn">Add to
+                        Cart</button></a>
+                <a href="addtc.html"><button class="buy-now-btn">Buy Now</button></a>
+            </div>
+        </div>
+
+        <div class="products">
+            <div class="row1">
+                <img src="p11-removebg-preview.png" alt="">
+                <div class="product-text">
+                    <h5>SALE</h5>
+                </div>
+
+                <div class="ratting">
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bx-star'></i>
+                    <i class='bx bx-star'></i>
+                </div>
+
+                <div class="price">
+                    <h4>Fruit of Loom Original T-Shirt</h4>
+                    <p>₱ 1200 - 900</p>
+                </div>
+                <a href="addtc.html"><button class="add-to-cart-btn">Add to
+                        Cart</button></a>
+                <a href="addtc.html"><button class="buy-now-btn">Buy Now</button></a>
+            </div>
+            <div class="row1">
+                <img src="p12-removebg-preview.png" alt="">
+                <div class="product-text">
+                    <h5>NEW</h5>
+                </div>
+
+                <div class="ratting">
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star-half'></i>
+                </div>
+
+                <div class="price">
+                    <h4>FUBU</h4>
+                    <p>₱ 780</p>
+                </div>
+                <a href="addtc.html"><button class="add-to-cart-btn">Add to
+                        Cart</button></a>
+                <a href="addtc.html"><button class="buy-now-btn">Buy Now</button></a>
+            </div>
+            <div class="row1">
+                <img src="p13-removebg-preview.png" alt="">
+                <div class="product-text">
+                    <h5>NEW</h5>
+                </div>
+
+                <div class="ratting">
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bx-star'></i>
+                </div>
+
+                <div class="price">
+                    <h4>DICKES Womens</h4>
+                    <p>₱ 550</p>
+                </div>
+                <div class="shop">
+                    <a href="addtc.html"><button class="add-to-cart-btn">Add to
+                            Cart</button></a>
+                    <a href="addtc.html"><button class="buy-now-btn">Buy
+                            Now</button></a>
+                </div>
+
+            </div>
+            <div class="row1">
+                <img src="p14-removebg-preview.png" alt="">
+                <div class="product-text">
+                    <h5>NEW</h5>
+                </div>
+
+                <div class="ratting">
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bx-star'></i>
+                    <i class='bx bx-star'></i>
+                </div>
+
+                <div class="price">
+                    <h4>Rise Of Brutality T-Shirt</h4>
+                    <p>₱ 550</p>
+                </div>
+                <a href="addtc.html"><button class="add-to-cart-btn">Add to
+                        Cart</button></a>
+                <a href="addtc.html"><button class="buy-now-btn">Buy Now</button></a>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!--MY FOOTER-->
+    <footer class="footer_div">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <div class="footer-col">
+                        <h5>Customer Service</h5>
+                        <ul>
+                            <li>
+                                <a href="#">My Account</a>
+                                <a href="#">Contact Us</a>
+                                <a href="#">Shipping & Delivery</a>
+                                <a href="#">Returns & Exchange</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-col">
+                        <h5>Products</h5>
+                        <ul>
+                            <li>
+                                <a href="#">Mens</a>
+                                <a href="#">Womens</a>
+
+                                <a href="#">Classics</a>
+                                <a href="#">Promotions</a>
+
+
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="footer-col">
+                    <h5>Company</h5>
+                    <ul>
+                        <li>
+                            <a href="#">Terms & Conditions</a>
+                            <a href="#">Privacy</a>
+                            <a href="#">Careers</a>
+                            <a href="#">About</a>
+                            <a href="#">Accessibility Statement</a>
+                            <a href="#">Sustainability Hub</a>
+
+                            <a href="#">Affiliate Program</a>
+                            <a href="#">Unsolicited Materials</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h5>Contact</h5>
+                    <ul>
+                        <li>
+                            <a href="#"><b>Email</b></a>
+                            <a href="#">Contact Us</a>
+                            <a href="#"><b>Adress</b></a>
+                            <a href="#">Sabang Danao City, Cebu - 6004</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h5>Support </h5>
+                    <ul>
+                        <li>
+                            <a href="#">FAQ</a>
+                            <a href="#">Ways To Shop Franklin's Vault</a>
+                            <a href="#">Order Status</a>
+                            <a href="#">Payment Options</a>
+                            <a href="#">Accessibility</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer-col1">
+                    <h5>FRANKLIN'S VAULT&trade;</h5>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/franklin.tripole.3/"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://twitter.com/"><i class="fab fa-x"></i></a>
+                        <a href="https://www.instagram.com/franklin.tripole.3/"><i class="fab fa-instagram"></i></a>
+                        <a href="https://youtube.com/@coolflow27"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-col subscribe">
+                <h5>Subscribe</h5>
+                <p>Receive product news and updates in your inbox.</p>
+                <form action="#" method="post">
+                    <input type="email" name="email" placeholder="Your email address" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+
+            <p class="rights"><img src="Footer-removebg-preview.png"
+                    style="max-width: 100%; height: auto; transform: scale(1.6);" alt="franklin's-vault">&trade;All
+                Rights Reserved 2024.</p>
+        </div>
+        </div>
+        </div>
+    </footer>
+    <!--END-->
+
+    <script src="./JavaScript/javascipt.js"></script>
+</body>
+
+</html>
